@@ -13,8 +13,6 @@ Investigate and operate the protocols, standards and architectures used in repre
 
 ## Learning Outcomes
 
-The aim of the module is to provide a comprehensive grounding in solving computational problems and designing algorithms.
-
 1. Compare data models and architectures used in applications.
 
 2. Write software applications that adhere to common standards and protocols.
