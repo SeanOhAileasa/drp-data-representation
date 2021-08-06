@@ -23,6 +23,21 @@ Output: all cars
     from flask.json import jsonify
     return jsonify({"allCars":cars})
 # --- END ---
+# repository ./drp-data-representation
+@app.route(rule="/get-all-cars/<string:nParReg>")
+def fGetCar(nParReg):
+    """URL map for anything after "/get-all-cars/".
+
+Input: nParReg
+Process: (lambda; filter; list; flask.json.jsonify)
+Output: first car registration match
+"""
+    from flask.json import jsonify
+    nFoundCars=list(filter(lambda n:n["reg"]==nParReg,cars))
+    if len(nFoundCars)==0:
+        return jsonify({"theCar":""}),204
+    return jsonify({"theCar":nFoundCars[0]}) 
+# --- END ---
 cars=[
     {
         "reg":"181 G 1234",
