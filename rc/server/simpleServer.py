@@ -61,6 +61,32 @@ Output: return new car with status code 201
     cars.append(nObjNewCar)
     return jsonify({"car":nObjNewCar}),201
 # --- END ---
+# repository ./drp-data-representation
+@app.route("/get-all-cars/<string:nParReg>",methods=["PUT"])
+def fUpdateCar(nParReg):
+    """Update existing car.
+
+Input: nParReg
+Process: (lambda; filter; list; len; flask.abort; flask.request; type; flask.json.jsonify;)
+Output:
+"""    
+    from flask import request,abort,jsonify
+    nFoundCars=list(filter(lambda t:t["reg"]==nParReg,cars))
+    if len(nFoundCars)==0:
+        abort(404)
+    if not request.json:
+        abort(400)
+    if "make" in request.json and type(request.json["make"])!=str:
+        abort(400)
+    if "model" in request.json and type(request.json["model"]) is not str:
+        abort(400)
+    if "price" in request.json and type(request.json["price"]) is not int:
+        abort(400)
+    nFoundCars[0]["make"]=request.json.get("make",nFoundCars[0]["make"])
+    nFoundCars[0]["model"]=request.json.get("model",nFoundCars[0]["model"])
+    nFoundCars[0]["price"]=request.json.get("price",nFoundCars[0]["price"])
+    return jsonify({"car":nFoundCars[0]})
+# --- END ---
 cars=[
     {
         "reg":"181 G 1234",
