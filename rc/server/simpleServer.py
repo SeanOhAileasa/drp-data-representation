@@ -38,6 +38,29 @@ Output: first car registration match
         return jsonify({"theCar":""}),204
     return jsonify({"theCar":nFoundCars[0]}) 
 # --- END ---
+# repository ./drp-data-representation
+@app.route(rule="/get-all-cars",methods=["POST"])
+def fCreateCar():
+    """Create new car.
+
+Input:
+Process: (flask.request; flask.abort; append; flask.json.jsonify;)
+Output: return new car with status code 201 
+"""
+    from flask import request,abort,jsonify
+    if not request.json:
+        abort(400)
+    if not "reg" in request.json:
+        abort(400)
+    nObjNewCar={
+        "reg":request.json["reg"],
+        "make":request.json["make"],
+        "model":request.json["model"],
+        "price":request.json["price"]
+    }
+    cars.append(nObjNewCar)
+    return jsonify({"car":nObjNewCar}),201
+# --- END ---
 cars=[
     {
         "reg":"181 G 1234",
