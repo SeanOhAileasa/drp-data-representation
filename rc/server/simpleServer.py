@@ -44,7 +44,7 @@ def fCreateCar():
     """Create new car.
 
 Input:
-Process: (flask.request; flask.abort; append; flask.json.jsonify;)
+Process: (flask.request; flask.abort; append; flask.json.jsonify)
 Output: return new car with status code 201 
 """
     from flask import request,abort,jsonify
@@ -67,7 +67,7 @@ def fUpdateCar(nParReg):
     """Update existing car.
 
 Input: nParReg
-Process: (lambda; filter; list; len; flask.abort; flask.request; type; flask.json.jsonify;)
+Process: (lambda; filter; list; len; flask.abort; flask.request; type; flask.json.jsonify)
 Output:
 """    
     from flask import request,abort,jsonify
@@ -86,6 +86,22 @@ Output:
     nFoundCars[0]["model"]=request.json.get("model",nFoundCars[0]["model"])
     nFoundCars[0]["price"]=request.json.get("price",nFoundCars[0]["price"])
     return jsonify({"car":nFoundCars[0]})
+# --- END ---
+# repository ./drp-data-representation
+@app.route("/get-all-cars/<string:nParReg>",methods=["DELETE"])
+def fDeleteCar(nParReg):
+    """Delete a car.
+
+Input: nParReg
+Process: (lambda; filter; list; len; flask.abort; remove; flask.json.jsonify)
+Output:
+"""
+    from flask import abort,jsonify
+    nFoundCars=list(filter(lambda z:z["reg"]==nParReg,cars))
+    if len(nFoundCars)==0:
+        abort(404)
+    cars.remove(nFoundCars[0])
+    return jsonify({"result":True})
 # --- END ---
 cars=[
     {
