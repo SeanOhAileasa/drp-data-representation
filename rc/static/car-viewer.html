@@ -1,4 +1,4 @@
-<!-- [4] -->
+<!-- [8] -->
 <meta charset="UTF-8">
 <html>
     <head>
@@ -9,10 +9,10 @@
     <body>
         <h1>Cars</h1>
         <div> 
-            <button>Create</button>
+            <button id="showCreateButton" onclick="fShowCreate()">Create</button> <!-- 2. 4. -->
         </div>
         <div>
-            <table class="table">
+            <table class="table" id="carTable"> <!-- 2. -->
                 <tr>
                     <th>Reg</th>
                     <th>Make</th>
@@ -21,33 +21,33 @@
                     <th>Update</th>
                     <th>Delete</th>
                 </tr>
-                <tr>
+                <tr id="191 MO 123"> <!-- 20. -->
                     <td>191 MO 123</td>
                     <td>Ford</td>
                     <td>Modeo</td>
-                    <td>25,000</td>
-                    <td><button>Update</button></td>
-                    <td><button>Delete</button></td>                
+                    <td>25000</td>
+                    <td><button onclick="fShowUpdate(this)">Update</button></td> <!-- 8. -->
+                    <td><button onclick="fDoDelete(this)">Delete</button></td> <!-- 24. -->               
                 </tr>
-                <tr>
+                <tr id="12 D 123"> <!-- 20. -->
                     <td>12 D 123</td>
                     <td>Fiat</td>
                     <td>Punto</td>
-                    <td>4,000</td>
-                    <td><button>Update</button></td>
-                    <td><button>Delete</button></td>                
+                    <td>4000</td>
+                    <td><button onclick="fShowUpdate(this)">Update</button></td> <!-- 8. -->
+                    <td><button onclick="fDoDelete(this)">Delete</button></td> <!-- 24. -->               
                 </tr>
-                <tr>
-                    <td>08 G 123</td>
+                <tr id="08 G 123"> <!-- 20. -->
+                    <td>08 G 123</td> 
                     <td>Nissan</td>
                     <td>Almera</td>
                     <td>500</td>
-                    <td><button>Update</button></td>
-                    <td><button>Delete</button></td>                
+                    <td><button onclick="fShowUpdate(this)">Update</button></td> <!-- 8. -->
+                    <td><button onclick="fDoDelete(this)">Delete</button></td> <!-- 24. --> 
                 </tr>
             </table>
         </div>
-        <div>
+        <div id="createUpdateForm" style="display:none"> <!-- 1. -->
             <h2><span>Create a </span><span>update</span> Car</h2>        
             Reg<input type="text" name="Reg"/><br/>
                 Make
@@ -58,8 +58,144 @@
                 </select><br/>
             Model<input type="text" name="model"/><br/>
             Price<input type="number" name="price"/><br/>
-            <span><button>Create</button></span>
-            <span><button>Update</button></span>
+            <span id="createLabel"> <!-- 5. -->
+                <button id="doCreateButton" onclick="fDoCreate()">Create</button> <!-- 5. 9. -->
+            </span>
+            <span id="updateLabel"> <!-- 5. -->
+                <button id="doUpdateButton" onclick="fDoUpdate()">Update</button> <!-- 5. 23. -->
+            </span>
         </div>
     </body>
+    <script>
+        function fShowCreate() 
+        {
+            document.getElementById("showCreateButton").style.display="none"; // 3.
+            document.getElementById("carTable").style.display="none"; // 3.
+            document.getElementById("createUpdateForm").style.display="block"; // 3.
+
+            document.getElementById("createLabel").style.display="inline"; // 6.
+            document.getElementById("updateLabel").style.diplay="none"; // 6.
+            document.getElementById("doCreateButton").style.display="block"; // 6.
+            document.getElementById("doUpdateButton").style.display="none"; // 6.
+        }
+        function fShowUpdate(buttonElement)
+        {
+            document.getElementById('showCreateButton').style.display="none"; // 19.
+            document.getElementById('carTable').style.display="none"; // 19.
+            
+            document.getElementById("createUpdateForm").style.display="block" // 7.
+            document.getElementById("updateLabel").style.diplay="inline"; // 7.
+            document.getElementById("createLabel").style.display="none"; // 7.
+            document.getElementById("doUpdateButton").style.display="block"; // 7.
+            document.getElementById("doCreateButton").style.display="none"; // 7.
+            var nRowElement=buttonElement.parentNode.parentNode; // 19. refer closest
+            var nCar=fGetCarFromRow(nRowElement); // 19.
+            fPopulateFormWithCar(nCar); // 19.
+            // fGetCarFromForm() // test via console
+        }
+        function fDoCreate()
+        {
+            // console.log("function call - fDoCreate"); // 9.            
+            var nForm=document.getElementById("createUpdateForm"); // 14.
+            var nObjCar={}; // 14.
+            nObjCar.reg=nForm.querySelector("input[name=\"Reg\"]").value; // 14.
+            nObjCar.make=nForm.querySelector("select[name=\"make\"]").value; // 14.
+            nObjCar.model=nForm.querySelector("input[name=\"model\"]").value; // 14.
+            nObjCar.price=nForm.querySelector("input[name=\"price\"]").value; // 14.
+            console.log(JSON.stringify(nObjCar)); // 14.
+            fAddCarToTable(nObjCar) // 15.
+            fClearForm(); // 13.
+            fShowViewAll(); // 11.
+        }
+        function fShowViewAll()
+        {
+            document.getElementById("showCreateButton").style.display="block"; // 10.
+            document.getElementById("carTable").style.display="block"; // 10.
+            document.getElementById("createUpdateForm").style.display="none"; // 10.
+        }
+        function fClearForm()
+        {
+            var nForm=document.getElementById("createUpdateForm"); // 12.
+            nForm.querySelector("input[name=\"Reg\"]").disabled=false; // 12.
+            nForm.querySelector("input[name=\"Reg\"]").value=""; // 12.
+            nForm.querySelector("select[name=\"make\"]").value=""; // 12.
+            nForm.querySelector("input[name=\"model\"]").value=""; // 12.
+            nForm.querySelector("input[name=\"price\"]").value=""; // 12.
+        }
+        function fAddCarToTable(nParCar)
+        {
+            // console.log("function call - fAddCarToTable"); // 15.
+            var nTableElement=document.getElementById("carTable"); // 16.
+            var nRowElement=nTableElement.insertRow(-1); // 16.
+            nRowElement.setAttribute("id",nParCar.reg); // 26.            
+            
+            var nCell1=nRowElement.insertCell(0); // 16.
+            nCell1.innerHTML=nParCar.reg; // 16.
+
+            var nCell2=nRowElement.insertCell(1); // 16.
+            nCell2.innerHTML=nParCar.make; // 16.
+            
+            var nCell3=nRowElement.insertCell(2); // 16.
+            nCell3.innerHTML=nParCar.model; // 16.
+            
+            var nCell4=nRowElement.insertCell(3); // 16.
+            nCell4.innerHTML=nParCar.price; // 16.
+
+            var nCell5=nRowElement.insertCell(4);
+            nCell5.innerHTML="<button onclick=\"fShowUpdate(this)\">Update</button>";
+            var nCell6=nRowElement.insertCell(5);
+            nCell6.innerHTML="<button onclick=\"fDoDelete(this)\">Delete</button>";
+        }
+        function fGetCarFromRow(nParRowElement)
+        {
+            var nObjCar={} // 17.
+            nObjCar.reg=nParRowElement.cells[0].firstChild.textContent; // 17.
+            nObjCar.make=nParRowElement.cells[1].firstChild.textContent; // 17.
+            nObjCar.model=nParRowElement.cells[2].firstChild.textContent; // 17.
+            nObjCar.price=nParRowElement.cells[3].firstChild.textContent; // 17.
+            return nObjCar;
+        }
+        function fPopulateFormWithCar(nParCar)
+        {
+            var nForm=document.getElementById("createUpdateForm"); // 18.
+            nForm.querySelector("input[name=\"Reg\"]").disabled=true; // 18.
+            nForm.querySelector("input[name=\"Reg\"]").value=nParCar.reg; // 18.
+            nForm.querySelector("select[name=\"make\"]").value=nParCar.make; // 18.
+            nForm.querySelector("input[name=\"model\"]").value=nParCar.model; // 18.
+            nForm.querySelector("input[name=\"price\"]").value=nParCar.price; // 18.
+        }
+        function fGetCarFromForm()
+        {
+            var nForm=document.getElementById("createUpdateForm"); // 21.
+            var nObjCar={}; // 21.
+            nObjCar.reg=nForm.querySelector("input[name=\"Reg\"]").value; // 21.
+            nObjCar.make=nForm.querySelector("select[name=\"make\"]").value; // 21.
+            nObjCar.model=nForm.querySelector("input[name=\"model\"]").value; // 21.
+            nObjCar.price=nForm.querySelector("input[name=\"price\"]").value; // 21.
+            console.log(JSON.stringify(nObjCar)); // 21.
+            return nObjCar; // 21.
+        }
+        function fSetCarInRow(nParRowElement,nParCar)
+        {
+            nParRowElement.cells[0].firstChild.textContent=nParCar.reg; // 22.
+            nParRowElement.cells[1].firstChild.textContent=nParCar.make; // 22.
+            nParRowElement.cells[2].firstChild.textContent=nParCar.model; // 22.
+            nParRowElement.cells[3].firstChild.textContent=nParCar.price; // 22.            
+        }
+        function fDoUpdate() // add update onclick
+        {
+            var nCar=fGetCarFromForm(); // 23.
+            var nRowElement=document.getElementById(nCar.reg); // 23.
+            fSetCarInRow(nRowElement,nCar); // 23.
+            fClearForm(); // 23.
+            fShowViewAll(); // 23.           
+        }
+        function fDoDelete(nParRow)
+        {
+            // console.log("function call - fDoDelete")
+            var nTableElement=document.getElementById("carTable");
+            var nIndex=nParRow.parentNode.parentNode.rowIndex;
+            nTableElement.deleteRow(nIndex);
+        }
+    </script>
 <html>
