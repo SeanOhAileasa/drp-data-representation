@@ -1,0 +1,33 @@
+<!-- [18] -->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>testing... create-car</title>       
+    </head>
+    <body>
+        <button onclick="fCreateCar()">Create</button>
+        <div id="output"></div>      
+    </body>
+    <script>
+        function fCreateCar()
+        {
+            var nCar={"reg":"12 D 1234","make":"Fiat","model":"Punto","price":3000};
+            console.log(JSON.stringify(nCar));
+            $.ajax({
+                "url":"http://localhost:5000/get-all-cars",
+                "method":"POST",
+                "data":JSON.stringify(nCar),
+                contentType:"application/json; charset=utf-8",
+                "success":function(nParResult)
+                {
+                    console.log(nParResult);
+                    document.getElementById("output").innerText=JSON.stringify(nParResult);
+                },
+                "error":function(xhr,nParStatus,nParError)
+                {
+                    console.log("error: "+nParStatus+"msg: "+nParError);
+                }
+            });
+        }
+    </script>      
+</html>
