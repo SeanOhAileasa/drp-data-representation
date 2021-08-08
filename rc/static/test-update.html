@@ -2,22 +2,23 @@
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>testing... create-car</title>       
+        <title>testing... update-car</title>       
     </head>
     <body>
-        <button onclick="fCreateCar()">Create</button>
+        <button onclick="fUpdateCar()">Update</button>
         <div id="output"></div>      
     </body>
     <script>
-        function fCreateCar()
+        function fUpdateCar()
         {
-            var nCar={"reg":"12 D 1234","make":"Fiat","model":"Punto","price":3000};
+            var nReg="181 G 1234"; // car with reg
+            var nCar={"price":300000}; // change car price
             console.log(JSON.stringify(nCar));
             $.ajax({
-                "url":"http://localhost:5000/get-all-cars",
-                "method":"POST",
-                "data":JSON.stringify(nCar),
-                "dataType": "JSON",
+                "url":"http://localhost:5000/get-all-cars/"+encodeURI(nReg),
+                "method":"PUT",
+                "data":JSON.stringify(nCar), // {"price":300000}
+                "dataType":"JSON",
                 contentType:"application/json; charset=utf-8",
                 "success":function(nParResult)
                 {
