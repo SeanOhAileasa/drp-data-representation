@@ -1,0 +1,65 @@
+<!-- [4] -->
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>View cars</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Cars</h1>
+        <div> 
+            <button>Create</button>
+        </div>
+        <div>
+            <table class="table">
+                <tr>
+                    <th>Reg</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>191 MO 123</td>
+                    <td>Ford</td>
+                    <td>Modeo</td>
+                    <td>25,000</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>                
+                </tr>
+                <tr>
+                    <td>12 D 123</td>
+                    <td>Fiat</td>
+                    <td>Punto</td>
+                    <td>4,000</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>                
+                </tr>
+                <tr>
+                    <td>08 G 123</td>
+                    <td>Nissan</td>
+                    <td>Almera</td>
+                    <td>500</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>                
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2><span>Create a </span><span>update</span> Car</h2>        
+            Reg<input type="text" name="Reg"/><br/>
+                Make
+                <select name="make">
+                    <option value="Ford">Ford</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Nissan">Nissan</option>
+                </select><br/>
+            Model<input type="text" name="model"/><br/>
+            Price<input type="number" name="price"/><br/>
+            <span><button>Create</button></span>
+            <span><button>Update</button></span>
+        </div>
+    </body>
+<html>

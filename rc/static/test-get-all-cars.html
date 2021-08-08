@@ -1,0 +1,29 @@
+<!-- [18] -->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>testing... get-all-cars</title>       
+    </head>
+    <body>
+        <button onclick="fGetAllCars()">Get all</button>
+        <script>
+            function fGetAllCars()
+            {
+                $.ajax({
+                    "url":"http://localhost:5000/get-all-cars",
+                    "method":"GET",
+                    "data":"",
+                    "dataType":"JSON",
+                    "success":function(nParResult)
+                    {
+                        console.log(nParResult);
+                    },
+                    "error":function(xhr,nParStatus,nParError)
+                    {
+                        console.log("error: "+nParStatus+" msg: "+nParError);
+                    }
+                });
+            }
+        </script>        
+    </body>
+</html>
