@@ -5,25 +5,27 @@
         <title>testing... get-all-cars</title>       
     </head>
     <body>
-        <button onclick="fGetAllCars()">Get all</button>
-        <script>
-            function fGetAllCars()
-            {
-                $.ajax({
-                    "url":"http://localhost:5000/get-all-cars",
-                    "method":"GET",
-                    "data":"",
-                    "dataType":"JSON",
-                    "success":function(nParResult)
-                    {
-                        console.log(nParResult);
-                    },
-                    "error":function(xhr,nParStatus,nParError)
-                    {
-                        console.log("error: "+nParStatus+" msg: "+nParError);
-                    }
-                });
-            }
-        </script>        
+        <button onclick="fGetAllCars()">Get all</button>       
     </body>
+    <script>
+        function fGetAllCars()
+        {
+            $.ajax({
+                "url":"http://localhost:5000/get-all-cars",
+                "method":"GET",
+                "data":"",
+                "dataType":"JSON",
+                "success":function(nParResult)
+                {
+                    for (nEachCar of nParResult.allCars){
+                        console.log(nEachCar);
+                    }
+                },
+                "error":function(xhr,nParStatus,nParError)
+                {
+                    console.log("error: "+nParStatus+" msg: "+nParError);
+                }
+            });
+        }
+    </script>     
 </html>

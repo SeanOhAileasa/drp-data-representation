@@ -2,27 +2,24 @@
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>testing... create-car</title>       
+        <title>testing... delete-car</title>       
     </head>
     <body>
-        <button onclick="fCreateCar()">Create</button>
+        <button onclick="fDeleteCar()">Delete</button>
         <div id="output"></div>      
     </body>
     <script>
-        function fCreateCar()
+        function fDeleteCar()
         {
-            var nCar={"reg":"12 D 1234","make":"Fiat","model":"Punto","price":3000};
-            console.log(JSON.stringify(nCar));
+            var nCar={"reg":"181 G 1234"};
             $.ajax({
-                "url":"http://localhost:5000/get-all-cars",
-                "method":"POST",
-                "data":JSON.stringify(nCar),
+                "url":"http://localhost:5000/get-all-cars/"+encodeURI(nCar.reg),
+                "method":"DELETE",
+                "data":"",
                 "dataType":"JSON",
-                contentType:"application/json; charset=utf-8",
                 "success":function(nParResult)
                 {
                     console.log(nParResult);
-                    document.getElementById("output").innerText=JSON.stringify(nParResult);
                 },
                 "error":function(xhr,nParStatus,nParError)
                 {
