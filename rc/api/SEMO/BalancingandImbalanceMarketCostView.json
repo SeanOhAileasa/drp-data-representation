@@ -1,0 +1,659 @@
+{
+    "pagination": {
+        "pageSize": 50,
+        "currentPage": 1,
+        "totalItems": 649,
+        "totalPages": 13
+    },
+    "resourceBaseUri": "http://reports.sem-o.com/documents",
+    "items": [
+        {
+            "_id": "5ea82fdb9620d97f0e64bcf4",
+            "Date": "2020-04-28",
+            "PublishTime": "2020-04-28T13:06:01",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202004281200.xml"
+        },
+        {
+            "_id": "5ea836f19620d9143a18aada",
+            "Date": "2020-04-28",
+            "PublishTime": "2020-04-28T13:34:11",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202004281230.xml"
+        },
+        {
+            "_id": "610dc5fa9620d91b1103e1c4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-06T23:00:29",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108062200.xml"
+        },
+        {
+            "_id": "610dcd029620d9290d398034",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-06T23:30:35",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108062230.xml"
+        },
+        {
+            "_id": "610dd40b9620d937594e7bce",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T00:00:37",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108062300.xml"
+        },
+        {
+            "_id": "610ddb129620d94552354224",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T00:30:28",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108062330.xml"
+        },
+        {
+            "_id": "610de21a9620d953af1c0fc4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T01:00:41",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070000.xml"
+        },
+        {
+            "_id": "610de9229620d961e728dc24",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T01:30:29",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070030.xml"
+        },
+        {
+            "_id": "610df02a9620d97018691544",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T02:00:28",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070100.xml"
+        },
+        {
+            "_id": "610df7329620d97e386c0d24",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T02:30:27",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070130.xml"
+        },
+        {
+            "_id": "610dfe3a9620d90e7c069894",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T03:00:27",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070200.xml"
+        },
+        {
+            "_id": "610e05429620d91c5905bbf4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T03:30:24",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070230.xml"
+        },
+        {
+            "_id": "610e0c4a9620d92ad93a38b4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T04:00:24",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070300.xml"
+        },
+        {
+            "_id": "610e13529620d938d478cfe4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T04:30:18",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070330.xml"
+        },
+        {
+            "_id": "610e1a5a9620d9474f0708c6",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T05:00:19",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070400.xml"
+        },
+        {
+            "_id": "610e21629620d955780eacb4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T05:30:22",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070430.xml"
+        },
+        {
+            "_id": "610e286a9620d9643036a74e",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T06:00:17",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070500.xml"
+        },
+        {
+            "_id": "610e2f739620d97268227e54",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T06:30:18",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070530.xml"
+        },
+        {
+            "_id": "610e367a9620d9024a58d7e4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T07:00:21",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070600.xml"
+        },
+        {
+            "_id": "610e3d839620d910ec7e797a",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T07:30:20",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070630.xml"
+        },
+        {
+            "_id": "610e448a9620d91fe05e95a4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T08:00:24",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070700.xml"
+        },
+        {
+            "_id": "610e4b929620d92e1739f6d4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T08:30:22",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070730.xml"
+        },
+        {
+            "_id": "610e4f169620d935c2605f84",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T09:00:20",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070800.xml"
+        },
+        {
+            "_id": "610e59a29620d94acb282544",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T09:30:28",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070830.xml"
+        },
+        {
+            "_id": "610e60ab9620d959196b0284",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T10:00:29",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070900.xml"
+        },
+        {
+            "_id": "610e67b29620d9676f6e21b5",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T10:30:23",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108070930.xml"
+        },
+        {
+            "_id": "610e6ebb9620d9761a6b0586",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T11:00:18",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071000.xml"
+        },
+        {
+            "_id": "610e75c39620d905b271c514",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T11:30:22",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071030.xml"
+        },
+        {
+            "_id": "610e7cca9620d9145f79f73e",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T12:00:24",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071100.xml"
+        },
+        {
+            "_id": "610e83d29620d9223e5731f4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T12:30:20",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071130.xml"
+        },
+        {
+            "_id": "610e8adb9620d930e6077aa4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T13:00:26",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071200.xml"
+        },
+        {
+            "_id": "610e91e29620d93f0d5903e4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T13:30:19",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071230.xml"
+        },
+        {
+            "_id": "610e98ea9620d94d7b5530b4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T14:00:18",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071300.xml"
+        },
+        {
+            "_id": "610e9ff29620d95ba7084f94",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T14:30:25",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071330.xml"
+        },
+        {
+            "_id": "610ea6fa9620d969fd14b294",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T15:00:32",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071400.xml"
+        },
+        {
+            "_id": "610eae029620d9780507ab64",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T15:30:27",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071430.xml"
+        },
+        {
+            "_id": "610eb50b9620d907eb74d584",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T16:00:26",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071500.xml"
+        },
+        {
+            "_id": "610ebc129620d915f31f3a44",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T16:30:22",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071530.xml"
+        },
+        {
+            "_id": "610ec31b9620d924906db0ba",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T17:00:29",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071600.xml"
+        },
+        {
+            "_id": "610eca229620d932681e0fd4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T17:30:27",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071630.xml"
+        },
+        {
+            "_id": "610ed12b9620d940ef774a9e",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T18:00:32",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071700.xml"
+        },
+        {
+            "_id": "610ed8329620d94ef5571544",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T18:30:25",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071730.xml"
+        },
+        {
+            "_id": "610edf3b9620d95d483f1a54",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T19:00:26",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071800.xml"
+        },
+        {
+            "_id": "610ee6429620d96b27488634",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T19:30:28",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071830.xml"
+        },
+        {
+            "_id": "610eed4a9620d9798b7f1064",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T20:00:27",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071900.xml"
+        },
+        {
+            "_id": "610ef4529620d9092925e8d4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T20:30:30",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108071930.xml"
+        },
+        {
+            "_id": "610efb5a9620d917c32f4bc4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T21:00:33",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108072000.xml"
+        },
+        {
+            "_id": "610f02639620d925cc14c768",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T21:30:33",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108072030.xml"
+        },
+        {
+            "_id": "610f096a9620d934453d8eb4",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T22:00:31",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108072100.xml"
+        },
+        {
+            "_id": "610f10729620d9428a007b64",
+            "Date": "2021-08-07",
+            "PublishTime": "2021-08-07T22:30:25",
+            "DateRetention": "2021-08-07",
+            "DPuG_ID": "BM-095",
+            "ReportName": "Balancing and Imbalance Market Cost View",
+            "Group": [
+                "Settlement Data"
+            ],
+            "Dynamic": true,
+            "ResourceName": "PUB_30MinImbalCost_202108072130.xml"
+        }
+    ]
+}
