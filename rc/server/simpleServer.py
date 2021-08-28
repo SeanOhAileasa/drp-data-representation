@@ -135,5 +135,17 @@ Output:
     from flask import url_for
     return "URL for function fIndex is: "+url_for("fIndex")
 # --- END ---
+# repository ./drp-data-representation
+@app.route("/request-method",methods=["GET","POST","DELETE"])
+def fRequestMethod():
+    """Print request method (HTTP).
+
+Input:
+Process: (flask.request.method)
+Output:
+"""
+    from flask import request
+    return request.method
+# --- END ---
 if __name__=="__main__":
     app.run(debug=True)
