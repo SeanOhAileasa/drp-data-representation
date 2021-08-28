@@ -147,5 +147,28 @@ Output:
     from flask import request
     return request.method
 # --- END ---
+# repository ./drp-data-representation
+@app.route("/home")
+def fHome():
+    """Redirect to function fLogin.
+
+Input:
+Process: (flask.redirect; flask.url_for)
+Output:
+"""
+    from flask import redirect,url_for
+    return redirect(url_for("fLogin"))
+# --- END ---
+# repository ./drp-data-representation
+@app.route("/login")
+def fLogin():
+    """From /home.
+
+Input:
+Process:
+Output:
+"""
+    return "served by: login"
+# --- END ---
 if __name__=="__main__":
     app.run(debug=True)
