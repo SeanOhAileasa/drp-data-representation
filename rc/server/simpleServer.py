@@ -123,5 +123,17 @@ cars=[
         "price":8000
     }
 ]
+# repository ./drp-data-representation
+@app.route("/url-index")
+def fURL():
+    """Demo url_for.
+
+Input:
+Process: (url_for)
+Output:
+"""
+    from flask import url_for
+    return "URL for function fIndex is: "+url_for("fIndex")
+# --- END ---
 if __name__=="__main__":
     app.run(debug=True)
