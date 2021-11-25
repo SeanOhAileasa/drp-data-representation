@@ -74,7 +74,7 @@
             document.getElementById("createUpdateForm").style.display="block"; // 3.
 
             document.getElementById("createLabel").style.display="inline"; // 6.
-            document.getElementById("updateLabel").style.diplay="none"; // 6.
+            document.getElementById("updateLabel").style.display="none"; // 6.
             document.getElementById("doCreateButton").style.display="block"; // 6.
             document.getElementById("doUpdateButton").style.display="none"; // 6.
         }
@@ -84,7 +84,7 @@
             document.getElementById('carTable').style.display="none"; // 19.
             
             document.getElementById("createUpdateForm").style.display="block" // 7.
-            document.getElementById("updateLabel").style.diplay="inline"; // 7.
+            document.getElementById("updateLabel").style.display="inline"; // 7.
             document.getElementById("createLabel").style.display="none"; // 7.
             document.getElementById("doUpdateButton").style.display="block"; // 7.
             document.getElementById("doCreateButton").style.display="none"; // 7.
@@ -190,12 +190,12 @@
             fClearForm(); // 23.
             fShowViewAll(); // 23.           
         }
-        function fDoDelete(nParRow)
+        function fDoDelete(nParRow) //24
         {
             // console.log("function call - fDoDelete")
             var nTableElement=document.getElementById("carTable");
             var nIndex=nParRow.parentNode.parentNode.rowIndex;
-            nTableElement.deleteRow(nIndex);
+            nTableElement.deleteRow(nIndex); //25
         }
     </script>
 <html>
