@@ -17,10 +17,10 @@ def fGetAllCars():
     """URL map for "/get-all-cars/".
 
 Input: 
-Process: (flask.json.jsonify)
+Process: (flask.jsonify)
 Output: all cars
 """
-    from flask.json import jsonify
+    from flask import jsonify
     return jsonify({"allCars":cars})
 # --- END ---
 # repository ./drp-data-representation
@@ -29,10 +29,10 @@ def fGetCar(nParReg):
     """URL map for anything after "/get-all-cars/".
 
 Input: nParReg
-Process: (lambda; filter; list; flask.json.jsonify)
+Process: (lambda; filter; list; flask.jsonify)
 Output: first car registration match
 """
-    from flask.json import jsonify
+    from flask import jsonify
     nFoundCars=list(filter(lambda n:n["reg"]==nParReg,cars))
     if len(nFoundCars)==0:
         return jsonify({"theCar":""}),204
@@ -44,7 +44,7 @@ def fCreateCar():
     """Create new car.
 
 Input:
-Process: (flask.request; flask.abort; append; flask.json.jsonify)
+Process: (flask.request; flask.abort; append; flask.jsonify)
 Output: return new car with status code 201 
 """
     from flask import request,abort,jsonify
@@ -67,7 +67,7 @@ def fUpdateCar(nParReg):
     """Update existing car.
 
 Input: nParReg
-Process: (lambda; filter; list; len; flask.abort; flask.request; type; flask.json.jsonify)
+Process: (lambda; filter; list; len; flask.abort; flask.request; type; flask.jsonify)
 Output:
 """    
     from flask import request,abort,jsonify
@@ -93,7 +93,7 @@ def fDeleteCar(nParReg):
     """Delete a car.
 
 Input: nParReg
-Process: (lambda; filter; list; len; flask.abort; remove; flask.json.jsonify)
+Process: (lambda; filter; list; len; flask.abort; remove; flask.jsonify)
 Output:
 """
     from flask import abort,jsonify
